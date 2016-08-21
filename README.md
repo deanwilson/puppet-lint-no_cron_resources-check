@@ -1,4 +1,4 @@
-# puppet-lint no_cron_resources check #
+# puppet-lint no_cron_resources check
 
 Extends puppet-lint to ensure no cron resources are contained in
 the catalog.
@@ -12,7 +12,7 @@ of, I'm looking at you `computer`. This `puppet-lint` check will
 display a warning each time it finds a usage of that resource, in this
 case `cron`.
 
-## Installation ##
+## Installation
 
 To use this plugin add the following line to your Gemfile
 
@@ -20,14 +20,14 @@ To use this plugin add the following line to your Gemfile
 
 and then run `bundle install`
 
-## Usage ##
+## Usage
 
 This plugin provides a new check to `puppet-lint` that warns if it finds
 a `cron` resource.
 
     cron resources should not be used
 
-## Customisation ##
+## Customisation
 
 It may be that you love `cron` resources but hate the idea of another
 specific type appearing in your code. To modify this `puppet-line` check
@@ -47,5 +47,10 @@ to detect another type you only need to run the following commands:
     # and rerun the tests
     bundle exec rake spec
 
-### Author ###
+## Other puppet-lint plugins
+
+You can find a list of my `puppet-lint` plugins in the
+[unixdaemon puppet-lint-plugins](https://github.com/deanwilson/unixdaemon-puppet-lint-plugins) repo.
+
+### Author
 [Dean Wilson](http://www.unixdaemon.net)
