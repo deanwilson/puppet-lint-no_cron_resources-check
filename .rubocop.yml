@@ -1,2 +1,18 @@
+AllCops:
+  NewCops: enable
+
 LineLength:
   Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 35
+  ExcludedMethods: [ 'describe' ]
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: 'comma'
+
+Layout/HashAlignment:
+  EnforcedColonStyle: table

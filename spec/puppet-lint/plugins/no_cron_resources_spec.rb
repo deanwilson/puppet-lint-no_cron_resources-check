@@ -5,13 +5,13 @@ describe 'no_cron_resources' do
 
   context 'catalogfile with out cron resources' do
     let(:code) do
-      <<-EOS
+      <<-TEST_CLASS
         class file_resource {
           file { '/tmp/my-file':
             mode => '0600',
           }
         }
-      EOS
+      TEST_CLASS
     end
 
     it 'should not detect any problems' do
@@ -21,7 +21,7 @@ describe 'no_cron_resources' do
 
   context 'catalogfile with cron resources' do
     let(:code) do
-      <<-EOS
+      <<-TEST_CLASS
         class cron_resource {
           cron { 'logrotate':
             command => '/usr/sbin/logrotate',
@@ -30,7 +30,7 @@ describe 'no_cron_resources' do
             minute  => 0,
           }
         }
-      EOS
+      TEST_CLASS
     end
 
     it 'should detect a single problem' do
