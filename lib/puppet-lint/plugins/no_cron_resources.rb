@@ -8,7 +8,6 @@ PuppetLint.new_check(:no_cron_resources) do
         line:    resource[:type].line,
         column:  resource[:type].column,
       }
-
     end
   end
 end
