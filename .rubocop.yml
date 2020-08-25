@@ -1,7 +1,7 @@
 AllCops:
   NewCops: enable
 
-LineLength:
+Layout/LineLength:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
