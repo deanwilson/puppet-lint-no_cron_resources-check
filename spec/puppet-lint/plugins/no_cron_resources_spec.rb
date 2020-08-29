@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'no_cron_resources' do
   let(:msg) { 'cron resources should not be used' }
 
-  context 'catalogfile with out cron resources' do
+  context 'without cron resources in manifest' do
     let(:code) do
       <<-TEST_CLASS
         class file_resource {
@@ -19,7 +19,7 @@ describe 'no_cron_resources' do
     end
   end
 
-  context 'catalogfile with cron resources' do
+  context 'with cron resources in manifest' do
     let(:code) do
       <<-TEST_CLASS
         class cron_resource {
