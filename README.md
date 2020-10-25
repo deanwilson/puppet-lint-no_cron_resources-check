@@ -3,7 +3,7 @@
 Extends puppet-lint to ensure no cron resources are contained in
 the catalog.
 
-[![Build Status](https://travis-ci.org/deanwilson/puppet-lint-no_cron_resources-check.svg?branch=master)](https://travis-ci.org/deanwilson/puppet-lint-no_cron_resources-check)
+[![Actions Status](https://github.com/deanwilson/puppet-lint-no_cron_resources-check/workflows/Ruby/badge.svg)](https://github.com/deanwilson/puppet-lint-no_cron_resources-check/actions)
 
 Sometimes there are certain `puppet` resource types that you don't want
 to include in your code base. This could be a fragile one like `cron`,
